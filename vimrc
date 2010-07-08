@@ -67,7 +67,10 @@ set wildignore+=vendor,log,tmp,*.swp
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 " Or use vividchalk
-colorscheme github
+colorscheme blackboard
+
+set list
+set lcs=eol:¬
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
